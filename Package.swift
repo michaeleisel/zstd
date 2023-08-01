@@ -24,7 +24,7 @@ let package = Package(
         .target(
             name: "libzstd",
             path: "lib",
-            sources: [ "common", "compress", "decompress", "dictBuilder" ],
+            sources: [ "common", "decompress" ],
             publicHeadersPath: ".",
             cSettings: [
                 .headerSearchPath(".")

@@ -1,0 +1,8 @@
+there's an outlier .S file for amd 64 which i removed for iOS builds
+zstd-decompress comes from ZSTD_COMMON_FILES + ZSTD_DECOMPRESS_FILES. each of these is simply all the *.c files in each of their respective directories
+running zstd-decompress on upstream dev, with V=1 to show commands, will show that it applies a simple and consistent of flags to all files being compiled
+ways to reduce size:
+  -Os
+  turn off legacy support with flags
+  see "Build size optimizations" in lib/libzstd.mk
+to cross-compile, simply add "-Os -target arm64-apple-ios14.0 -isysroot `xcode-select -p`/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk" to CFLAGS and LDFLAGS. the -target flag sets iOS 14.0 to be the min version, eliminating the need for the usual -miphone-version-min or w/e flag
