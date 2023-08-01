@@ -257,9 +257,24 @@ zstd-small: CFLAGS = -Os -Wl,-s
 zstd-frugal zstd-small: $(ZSTDLIB_CORE_SRC) zstdcli.c util.c timefn.c fileio.c fileio_asyncio.c
 	$(CC) $(FLAGS) -DZSTD_NOBENCH -DZSTD_NODICT -DZSTD_NOTRACE -UZSTD_LEGACY_SUPPORT -DZSTD_LEGACY_SUPPORT=0 $^ -o $@$(EXT)
 
+# Define object files
+ZSTDLIB_COMMON_OBJ = $(patsubst %.c,%.o,$(ZSTDLIB_COMMON_SRC))
+ZSTDLIB_DECOMPRESS_OBJ = $(patsubst %.c,%.o,$(ZSTDLIB_DECOMPRESS_SRC))
+
+# Compile each source file into an object file
+$(ZSTDLIB_COMMON_OBJ) : %.o : %.c
+	$(CC) $(FLAGS) -DZSTD_NOBENCH -DZSTD_NODICT -DZSTD_NOCOMPRESS -DZSTD_NOTRACE -UZSTD_LEGACY_SUPPORT -DZSTD_LEGACY_SUPPORT=0 -c $< -o $@
+
+$(ZSTDLIB_DECOMPRESS_OBJ) : %.o : %.c
+	$(CC) $(FLAGS) -DZSTD_NOBENCH -DZSTD_NODICT -DZSTD_NOCOMPRESS -DZSTD_NOTRACE -UZSTD_LEGACY_SUPPORT -DZSTD_LEGACY_SUPPORT=0 -c $< -o $@
+
+# Create a static library from the object files
+zstd-decompress: $(ZSTDLIB_COMMON_OBJ) $(ZSTDLIB_DECOMPRESS_OBJ)
+	ar rcs libzstd-decompress.a $^
+
 CLEAN += zstd-decompress
-zstd-decompress: $(ZSTDLIB_COMMON_SRC) $(ZSTDLIB_DECOMPRESS_SRC) zstdcli.c util.c timefn.c fileio.c fileio_asyncio.c
-	$(CC) $(FLAGS) -DZSTD_NOBENCH -DZSTD_NODICT -DZSTD_NOCOMPRESS -DZSTD_NOTRACE -UZSTD_LEGACY_SUPPORT -DZSTD_LEGACY_SUPPORT=0 $^ -o $@$(EXT)
+# zstd-decompress: $(ZSTDLIB_COMMON_SRC) $(ZSTDLIB_DECOMPRESS_SRC)
+	# $(CC) $(FLAGS) -DZSTD_NOBENCH -DZSTD_NODICT -DZSTD_NOCOMPRESS -DZSTD_NOTRACE -UZSTD_LEGACY_SUPPORT -DZSTD_LEGACY_SUPPORT=0 $^ -o $@$(EXT)
 
 CLEAN += zstd-compress
 zstd-compress: $(ZSTDLIB_COMMON_SRC) $(ZSTDLIB_COMPRESS_SRC) zstdcli.c util.c timefn.c fileio.c fileio_asyncio.c
