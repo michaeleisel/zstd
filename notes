@@ -6,3 +6,7 @@ ways to reduce size:
   turn off legacy support with flags
   see "Build size optimizations" in lib/libzstd.mk
 to cross-compile, simply add "-Os -target arm64-apple-ios14.0 -isysroot `xcode-select -p`/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk" to CFLAGS and LDFLAGS. the -target flag sets iOS 14.0 to be the min version, eliminating the need for the usual -miphone-version-min or w/e flag
+
+to build for ios with decompression only, use:
+  cd programs && make clean ; V=1 CFLAGS="-c -Os -target arm64-apple-ios14.0 -isysroot `xcode-select -p`/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk" LDFLAGS="$CFLAGS" make zstd-decompress
+
