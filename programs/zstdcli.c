@@ -8,6 +8,248 @@
  * You may select, at your option, one of the above-listed licenses.
  */
 
+/*
+ * This header file has common utility functions used in examples.
+ */
+#include <stdlib.h>    // malloc, free, exit
+#include <stdio.h>     // fprintf, perror, fopen, etc.
+#include <string.h>    // strerror
+#include <errno.h>     // errno
+#include <sys/stat.h>  // stat
+#include <zstd.h>
+
+
+/* UNUSED_ATTR tells the compiler it is okay if the function is unused. */
+#if defined(__GNUC__)
+#  define UNUSED_ATTR __attribute__((unused))
+#else
+#  define UNUSED_ATTR
+#endif
+
+#define HEADER_FUNCTION static UNUSED_ATTR
+
+
+/*
+ * Define the returned error code from utility functions.
+ */
+typedef enum {
+    ERROR_fsize = 1,
+    ERROR_fopen = 2,
+    ERROR_fclose = 3,
+    ERROR_fread = 4,
+    ERROR_fwrite = 5,
+    ERROR_loadFile = 6,
+    ERROR_saveFile = 7,
+    ERROR_malloc = 8,
+    ERROR_largeFile = 9,
+} COMMON_ErrorCode;
+
+/*! CHECK
+ * Check that the condition holds. If it doesn't print a message and die.
+ */
+#define CHECK(cond, ...)                        \
+    do {                                        \
+        if (!(cond)) {                          \
+            fprintf(stderr,                     \
+                    "%s:%d CHECK(%s) failed: ", \
+                    __FILE__,                   \
+                    __LINE__,                   \
+                    #cond);                     \
+            fprintf(stderr, "" __VA_ARGS__);    \
+            fprintf(stderr, "\n");              \
+            exit(1);                            \
+        }                                       \
+    } while (0)
+
+/*! CHECK_ZSTD
+ * Check the zstd error code and die if an error occurred after printing a
+ * message.
+ */
+#define CHECK_ZSTD(fn)                                           \
+    do {                                                         \
+        size_t const err = (fn);                                 \
+        CHECK(!ZSTD_isError(err), "%s", ZSTD_getErrorName(err)); \
+    } while (0)
+
+/*! fsize_orDie() :
+ * Get the size of a given file path.
+ *
+ * @return The size of a given file path.
+ */
+HEADER_FUNCTION size_t fsize_orDie(const char *filename)
+{
+    struct stat st;
+    if (stat(filename, &st) != 0) {
+        /* error */
+        perror(filename);
+        exit(ERROR_fsize);
+    }
+
+    off_t const fileSize = st.st_size;
+    size_t const size = (size_t)fileSize;
+    /* 1. fileSize should be non-negative,
+     * 2. if off_t -> size_t type conversion results in discrepancy,
+     *    the file size is too large for type size_t.
+     */
+    if ((fileSize < 0) || (fileSize != (off_t)size)) {
+        fprintf(stderr, "%s : filesize too large \n", filename);
+        exit(ERROR_largeFile);
+    }
+    return size;
+}
+
+/*! fopen_orDie() :
+ * Open a file using given file path and open option.
+ *
+ * @return If successful this function will return a FILE pointer to an
+ * opened file otherwise it sends an error to stderr and exits.
+ */
+HEADER_FUNCTION FILE* fopen_orDie(const char *filename, const char *instruction)
+{
+    FILE* const inFile = fopen(filename, instruction);
+    if (inFile) return inFile;
+    /* error */
+    perror(filename);
+    exit(ERROR_fopen);
+}
+
+/*! fclose_orDie() :
+ * Close an opened file using given FILE pointer.
+ */
+HEADER_FUNCTION void fclose_orDie(FILE* file)
+{
+    if (!fclose(file)) { return; };
+    /* error */
+    perror("fclose");
+    exit(ERROR_fclose);
+}
+
+/*! fread_orDie() :
+ *
+ * Read sizeToRead bytes from a given file, storing them at the
+ * location given by buffer.
+ *
+ * @return The number of bytes read.
+ */
+HEADER_FUNCTION size_t fread_orDie(void* buffer, size_t sizeToRead, FILE* file)
+{
+    size_t const readSize = fread(buffer, 1, sizeToRead, file);
+    if (readSize == sizeToRead) return readSize;   /* good */
+    if (feof(file)) return readSize;   /* good, reached end of file */
+    /* error */
+    perror("fread");
+    exit(ERROR_fread);
+}
+
+/*! fwrite_orDie() :
+ *
+ * Write sizeToWrite bytes to a file pointed to by file, obtaining
+ * them from a location given by buffer.
+ *
+ * Note: This function will send an error to stderr and exit if it
+ * cannot write data to the given file pointer.
+ *
+ * @return The number of bytes written.
+ */
+HEADER_FUNCTION size_t fwrite_orDie(const void* buffer, size_t sizeToWrite, FILE* file)
+{
+    size_t const writtenSize = fwrite(buffer, 1, sizeToWrite, file);
+    if (writtenSize == sizeToWrite) return sizeToWrite;   /* good */
+    /* error */
+    perror("fwrite");
+    exit(ERROR_fwrite);
+}
+
+/*! malloc_orDie() :
+ * Allocate memory.
+ *
+ * @return If successful this function returns a pointer to allo-
+ * cated memory.  If there is an error, this function will send that
+ * error to stderr and exit.
+ */
+HEADER_FUNCTION void* malloc_orDie(size_t size)
+{
+    void* const buff = malloc(size);
+    if (buff) return buff;
+    /* error */
+    perror("malloc");
+    exit(ERROR_malloc);
+}
+
+/*! loadFile_orDie() :
+ * load file into buffer (memory).
+ *
+ * Note: This function will send an error to stderr and exit if it
+ * cannot read data from the given file path.
+ *
+ * @return If successful this function will load file into buffer and
+ * return file size, otherwise it will printout an error to stderr and exit.
+ */
+HEADER_FUNCTION size_t loadFile_orDie(const char* fileName, void* buffer, size_t bufferSize)
+{
+    size_t const fileSize = fsize_orDie(fileName);
+    CHECK(fileSize <= bufferSize, "File too large!");
+
+    FILE* const inFile = fopen_orDie(fileName, "rb");
+    size_t const readSize = fread(buffer, 1, fileSize, inFile);
+    if (readSize != (size_t)fileSize) {
+        fprintf(stderr, "fread: %s : %s \n", fileName, strerror(errno));
+        exit(ERROR_fread);
+    }
+    fclose(inFile);  /* can't fail, read only */
+    return fileSize;
+}
+
+/*! mallocAndLoadFile_orDie() :
+ * allocate memory buffer and then load file into it.
+ *
+ * Note: This function will send an error to stderr and exit if memory allocation
+ * fails or it cannot read data from the given file path.
+ *
+ * @return If successful this function will return buffer and bufferSize(=fileSize),
+ * otherwise it will printout an error to stderr and exit.
+ */
+HEADER_FUNCTION void* mallocAndLoadFile_orDie(const char* fileName, size_t* bufferSize)
+{
+    size_t const fileSize = fsize_orDie(fileName);
+    *bufferSize = fileSize;
+    void* const buffer = malloc_orDie(*bufferSize);
+    loadFile_orDie(fileName, buffer, *bufferSize);
+    return buffer;
+}
+
+/*! saveFile_orDie() :
+ *
+ * Save buffSize bytes to a given file path, obtaining them from a location pointed
+ * to by buff.
+ *
+ * Note: This function will send an error to stderr and exit if it
+ * cannot write to a given file.
+ */
+HEADER_FUNCTION void saveFile_orDie(const char* fileName, const void* buff, size_t buffSize)
+{
+    FILE* const oFile = fopen_orDie(fileName, "wb");
+    size_t const wSize = fwrite(buff, 1, buffSize, oFile);
+    if (wSize != (size_t)buffSize) {
+        fprintf(stderr, "fwrite: %s : %s \n", fileName, strerror(errno));
+        exit(ERROR_fwrite);
+    }
+    if (fclose(oFile)) {
+        perror(fileName);
+        exit(ERROR_fclose);
+    }
+}
+
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under both the BSD-style license (found in the
+ * LICENSE file in the root directory of this source tree) and the GPLv2 (found
+ * in the COPYING file in the root directory of this source tree).
+ * You may select, at your option, one of the above-listed licenses.
+ */
+
 
 /*-************************************
 *  Tuning parameters
@@ -828,7 +1070,221 @@ typedef enum { zom_compress, zom_decompress, zom_test, zom_bench, zom_train, zom
 # define MAXCLEVEL  ZSTD_maxCLevel()
 #endif
 
-int main(int argCount, const char* argv[])
+typedef struct {
+    void *bytes;
+    ssize_t size;
+} Buffer;
+
+double currentTime() {
+#if defined(__linux__)
+  struct timespec time;
+  clock_gettime(CLOCK_MONOTONIC, &time);
+  return (uint64_t)time.tv_sec * 1000000000 + time.tv_nsec;
+#elif defined(__APPLE__)
+    return clock_gettime_nsec_np(CLOCK_UPTIME_RAW) / 1e9;
+#else
+  fail
+#endif
+}
+
+static void streamingDecompression(const char* fname)
+{
+    double start = currentTime();
+    double totalTime = 0;
+    FILE* const fin  = fopen_orDie(fname, "rb");
+    size_t const buffInSize = ZSTD_DStreamInSize();
+    void*  const buffIn  = malloc_orDie(buffInSize);
+    // FILE* const fout = stdout;
+    size_t const buffOutSize = ZSTD_DStreamOutSize();  /* Guarantee to successfully flush at least one complete compressed block in all circumstances. */
+    void*  const buffOut = malloc_orDie(buffOutSize);
+
+    ZSTD_DCtx* const dctx = ZSTD_createDCtx();
+    CHECK(dctx != NULL, "ZSTD_createDCtx() failed!");
+
+    /* This loop assumes that the input file is one or more concatenated zstd
+     * streams. This example won't work if there is trailing non-zstd data at
+     * the end, but streaming decompression in general handles this case.
+     * ZSTD_decompressStream() returns 0 exactly when the frame is completed,
+     * and doesn't consume input after the frame.
+     */
+    size_t const toRead = buffInSize;
+    size_t read;
+    ssize_t totalWritten = 0;
+    size_t lastRet = 0;
+    int isEmpty = 1;
+    while ( (read = fread_orDie(buffIn, toRead, fin)) ) {
+        isEmpty = 0;
+        ZSTD_inBuffer input = { buffIn, read, 0 };
+        /* Given a valid frame, zstd won't consume the last byte of the frame
+         * until it has flushed all of the decompressed data of the frame.
+         * Therefore, instead of checking if the return code is 0, we can
+         * decompress just check if input.pos < input.size.
+         */
+        while (input.pos < input.size) {
+            ZSTD_outBuffer output = { buffOut, buffOutSize, 0 };
+            /* The return code is zero if the frame is complete, but there may
+             * be multiple frames concatenated together. Zstd will automatically
+             * reset the context when a frame is complete. Still, calling
+             * ZSTD_DCtx_reset() can be useful to reset the context to a clean
+             * state, for instance if the last decompression call returned an
+             * error.
+             */
+            size_t const ret = ZSTD_decompressStream(dctx, &output , &input);
+            CHECK_ZSTD(ret);
+            totalWritten += output.pos;
+            // fwrite_orDie(buffOut, output.pos, fout);
+            lastRet = ret;
+        }
+    }
+
+    if (isEmpty) {
+        fprintf(stderr, "input is empty\n");
+        exit(1);
+    }
+
+    if (lastRet != 0) {
+        /* The last return value from ZSTD_decompressStream did not end on a
+         * frame, but we reached the end of the file! We assume this is an
+         * error, and the input was truncated.
+         */
+        fprintf(stderr, "EOF before end of stream: %zu\n", lastRet);
+        exit(1);
+    }
+
+    ZSTD_freeDCtx(dctx);
+    fclose_orDie(fin);
+    // fclose_orDie(fout);
+    free(buffIn);
+    free(buffOut);
+    totalTime += currentTime() - start;
+    printf("Took %lf\n", totalTime);
+    printf("Total written %zd\n", totalWritten);
+}
+
+static void simpleDecompress(const char* fname)
+{
+    double timeTaken = 0;
+    size_t cSize;
+    void* const cBuff = mallocAndLoadFile_orDie(fname, &cSize);
+    /* Read the content size from the frame header. For simplicity we require
+     * that it is always present. By default, zstd will write the content size
+     * in the header when it is known. If you can't guarantee that the frame
+     * content size is always written into the header, either use streaming
+     * decompression, or ZSTD_decompressBound().
+     */
+    double start = currentTime();
+    unsigned long long const rSize = ZSTD_getFrameContentSize(cBuff, cSize);
+    CHECK(rSize != ZSTD_CONTENTSIZE_ERROR, "%s: not compressed by zstd!", fname);
+    CHECK(rSize != ZSTD_CONTENTSIZE_UNKNOWN, "%s: original size unknown!", fname);
+
+    void* const rBuff = malloc_orDie((size_t)rSize);
+
+    /* Decompress.
+     * If you are doing many decompressions, you may want to reuse the context
+     * and use ZSTD_decompressDCtx(). If you want to set advanced parameters,
+     * use ZSTD_DCtx_setParameter().
+     */
+    size_t const dSize = ZSTD_decompress(rBuff, rSize, cBuff, cSize);
+    CHECK_ZSTD(dSize);
+    /* When zstd knows the content size, it will error if it doesn't match. */
+    CHECK(dSize == rSize, "Impossible because zstd will check this condition!");
+
+    /* success */
+
+    free(rBuff);
+    free(cBuff);
+    timeTaken += currentTime() - start;
+    printf("Took %lf\n", timeTaken);
+    printf("%25s : %6u -> %7u \n", fname, (unsigned)cSize, (unsigned)rSize);
+}
+
+
+static void decompresssss(const char* fname)
+{
+    double timeTaken = 0;
+    size_t cSize;
+    size_t dictSize;
+    void* const cBuff = mallocAndLoadFile_orDie(fname, &cSize);
+    void* const dictBuffer = mallocAndLoadFile_orDie("/Users/meisel/jsons/ieee-assets-main-js/other", &dictSize);
+    double start1 = currentTime();
+    ZSTD_DDict* const ddict = ZSTD_createDDict(dictBuffer, dictSize);
+    timeTaken += currentTime() - start1;
+    free(dictBuffer);
+    /* Read the content size from the frame header. For simplicity we require
+     * that it is always present. By default, zstd will write the content size
+     * in the header when it is known. If you can't guarantee that the frame
+     * content size is always written into the header, either use streaming
+     * decompression, or ZSTD_decompressBound().
+     */
+    double start2 = currentTime();
+    unsigned long long const rSize = ZSTD_getFrameContentSize(cBuff, cSize);
+    CHECK(rSize != ZSTD_CONTENTSIZE_ERROR, "%s: not compressed by zstd!", fname);
+    CHECK(rSize != ZSTD_CONTENTSIZE_UNKNOWN, "%s: original size unknown!", fname);
+    void* const rBuff = malloc((size_t)rSize);
+
+    /* Check that the dictionary ID matches.
+     * If a non-zstd dictionary is used, then both will be zero.
+     * By default zstd always writes the dictionary ID into the frame.
+     * Zstd will check if there is a dictionary ID mismatch as well.
+     */
+    unsigned const expectedDictID = ZSTD_getDictID_fromDDict(ddict);
+    unsigned const actualDictID = ZSTD_getDictID_fromFrame(cBuff, cSize);
+    CHECK(actualDictID == expectedDictID,
+          "DictID mismatch: expected %u got %u",
+          expectedDictID,
+          actualDictID);
+
+    /* Decompress using the dictionary.
+     * If you need to control the decompression parameters, then use the
+     * advanced API: ZSTD_DCtx_setParameter(), ZSTD_DCtx_refDDict(), and
+     * ZSTD_decompressDCtx().
+     */
+    ZSTD_DCtx* const dctx = ZSTD_createDCtx();
+    CHECK(dctx != NULL, "ZSTD_createDCtx() failed!");
+    size_t const dSize = ZSTD_decompress_usingDDict(dctx, rBuff, rSize, cBuff, cSize, ddict);
+    CHECK_ZSTD(dSize);
+    /* When zstd knows the content size, it will error if it doesn't match. */
+    CHECK(dSize == rSize, "Impossible because zstd will check this condition!");
+
+    ZSTD_freeDCtx(dctx);
+    free(rBuff);
+    free(cBuff);
+    ZSTD_freeDDict(ddict);
+    timeTaken += currentTime() - start2;
+    printf("Took %lf\n", timeTaken);
+}
+
+void* read_file_into_buffer(const char* filepath, ssize_t* size) {
+    struct stat st;
+    stat(filepath, &st);
+    
+    *size = (size_t)st.st_size;
+    
+    char* buffer = malloc(*size);
+    
+    FILE* file = fopen(filepath, "rb");
+    fread(buffer, sizeof(char), *size, file);
+    
+    fclose(file);
+    return buffer;
+}
+
+
+int main(int argc, char **argv) {
+    // decompress("/Users/meisel/jsons/ieee-assets-main-js/a.zst");
+    // simpleDecompress("/Users/meisel/jsons/ieee-assets-main-js/b.zst");
+    // streamingDecompression("/Users/meisel/jsons/ieee-assets-main-js/b.zst");
+    ssize_t cSize = 0;
+    const void *cBuff = read_file_into_buffer("/Users/meisel/jsons/ieee-assets-main-js/a.zst", &cSize);
+
+    ssize_t dictSize = 0;
+    const void *dictBuffer = read_file_into_buffer("/Users/meisel/jsons/ieee-assets-main-js/other", &dictSize);
+    char *errorMessage = NULL;
+    decompress(cBuff, cSize, dictBuffer, dictSize, &errorMessage);
+    return 0;
+}
+
+int zmain(int argCount, const char* argv[])
 {
     int argNb,
         followLinks = 0,
