@@ -1,0 +1,2845 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		0751FFDC799F454DA81C96FA /* zstdcat */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5E3DD6BBB1DB4FA0A702E091 /* Build configuration list for PBXAggregateTarget "zstdcat" */;
+			buildPhases = (
+				1D3C3FD0236A3D11E51C75BB /* Generate CMakeFiles/zstdcat */,
+			);
+			dependencies = (
+				9A1076B697BA4B1AB238EFBB /* PBXTargetDependency */,
+				4D3A95A0468641F2B75F91E0 /* PBXTargetDependency */,
+			);
+			name = zstdcat;
+			productName = zstdcat;
+		};
+		11A111447FEB451A954710BF /* zstdcat.1 */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 873B038CA9EF4A4BB25A12D2 /* Build configuration list for PBXAggregateTarget "zstdcat.1" */;
+			buildPhases = (
+				1B5450643E4DA7217F2DB2D9 /* Generate CMakeFiles/zstdcat.1 */,
+			);
+			dependencies = (
+				AF38B02900D94096902DB5DC /* PBXTargetDependency */,
+				BE02EBF6A5C14183B40625BF /* PBXTargetDependency */,
+			);
+			name = zstdcat.1;
+			productName = zstdcat.1;
+		};
+		31B2087ECAD244068BC0A51A /* zstdless.1 */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = AC54E49002C644B196F23A2C /* Build configuration list for PBXAggregateTarget "zstdless.1" */;
+			buildPhases = (
+				73399D05792F1CCBCEC7E119 /* Generate CMakeFiles/zstdless.1 */,
+			);
+			dependencies = (
+				C448EF7A4700404D9B6853E5 /* PBXTargetDependency */,
+			);
+			name = zstdless.1;
+			productName = zstdless.1;
+		};
+		326ADEE015BA46FBAD712B56 /* unzstd.1 */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 452038BEF84C40298AC4A524 /* Build configuration list for PBXAggregateTarget "unzstd.1" */;
+			buildPhases = (
+				2141DCC825DFC1C6A9D879F7 /* Generate CMakeFiles/unzstd.1 */,
+			);
+			dependencies = (
+				889695E17CF54020BCE17660 /* PBXTargetDependency */,
+				8EB9281E696D4B9489E82965 /* PBXTargetDependency */,
+			);
+			name = unzstd.1;
+			productName = unzstd.1;
+		};
+		5839E72207BA43E2A68C6AD0 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = A302055CA27C4D9B8DDA507B /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				2DBAD11E5A1AA319A8FFC9CC /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				6D0B4278B0194A06BC5EE00C /* PBXTargetDependency */,
+				86C8C145607D41B8BC0C6CEF /* PBXTargetDependency */,
+				F90E91F34A2F4D90A6E89303 /* PBXTargetDependency */,
+				80A84F4CAE8F476BA2242DBA /* PBXTargetDependency */,
+				D3F13FDB0FBA42B1A2D99FF1 /* PBXTargetDependency */,
+				0C6946518F6245C69E4ADEA0 /* PBXTargetDependency */,
+				4264FE7CA2DF4A1FAE4ABE56 /* PBXTargetDependency */,
+				BD8815BE410141F8B7F5727A /* PBXTargetDependency */,
+				DE93E1E49F9449D2BFF6998E /* PBXTargetDependency */,
+				9784585BE26E4692A3E696DD /* PBXTargetDependency */,
+				1357738DD2B54DAFA205FFEE /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		5B0D4D06AC2246F393E1EF97 /* zstdmt */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 74F1EB40D3EC448584B67554 /* Build configuration list for PBXAggregateTarget "zstdmt" */;
+			buildPhases = (
+				72E1D661C2933002278BC129 /* Generate CMakeFiles/zstdmt */,
+			);
+			dependencies = (
+				CD8B134DF37D4B6A9FEE1B4D /* PBXTargetDependency */,
+				36620CF4C3D441BEB62F2C8A /* PBXTargetDependency */,
+			);
+			name = zstdmt;
+			productName = zstdmt;
+		};
+		632A42F14B3B4A12A62E66A2 /* unzstd */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8424BB6F55DB447C9086CB5E /* Build configuration list for PBXAggregateTarget "unzstd" */;
+			buildPhases = (
+				D27A91DF71CDEFB64CB60938 /* Generate CMakeFiles/unzstd */,
+			);
+			dependencies = (
+				8BB979E9DE5E4F3CAFDF17FC /* PBXTargetDependency */,
+				2E9AE0A4494E49A899346011 /* PBXTargetDependency */,
+			);
+			name = unzstd;
+			productName = unzstd;
+		};
+		711CF9BB591E40089DB69D28 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D65371EDFDD941A48CE6AC8B /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				152F898AB53B437FB82C0031 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		A6CC9CF7D3BF411B84D9DA88 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F37B616FA7994633A10309C2 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				A4B46F4986E562594CD3071D /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		DED19FC7C2C04DEF8BC3A496 /* zstd.1 */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8E50C8E96BD941D8A3267C93 /* Build configuration list for PBXAggregateTarget "zstd.1" */;
+			buildPhases = (
+				966B239B45B391786FEBBF24 /* Generate CMakeFiles/zstd.1 */,
+			);
+			dependencies = (
+				F41C666DF83744A2A815D338 /* PBXTargetDependency */,
+			);
+			name = zstd.1;
+			productName = zstd.1;
+		};
+		F8BB81F49A914AFE8F2C231C /* zstdgrep.1 */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E0D027C66FC64C509600AB36 /* Build configuration list for PBXAggregateTarget "zstdgrep.1" */;
+			buildPhases = (
+				DCBAE8DB27B9495209036D70 /* Generate CMakeFiles/zstdgrep.1 */,
+			);
+			dependencies = (
+				665D77A2FA3A4E29B20BCFC9 /* PBXTargetDependency */,
+			);
+			name = zstdgrep.1;
+			productName = zstdgrep.1;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0253311AD83C49AA977BBB8B /* /Users/meisel/projects/zstd/programs/zstdcli.c */ = {isa = PBXBuildFile; fileRef = 0C1574775BF64B38A676EDBC /* /Users/meisel/projects/zstd/programs/zstdcli.c */; };
+		02B4868E0F5948DE98A20111 /* /Users/meisel/projects/zstd/programs/zstdcli_trace.c */ = {isa = PBXBuildFile; fileRef = FAF210CF9C8345C987EF081C /* /Users/meisel/projects/zstd/programs/zstdcli_trace.c */; };
+		15A1A63A7A0A4E2EACF78408 /* /Users/meisel/projects/zstd/programs/dibio.c */ = {isa = PBXBuildFile; fileRef = 34FBF7A05E3B49109A781C35 /* /Users/meisel/projects/zstd/programs/dibio.c */; };
+		15A658EBBD864F599516C875 /* /Users/meisel/projects/zstd/programs/benchfn.c */ = {isa = PBXBuildFile; fileRef = 56A4BD92EB8544EFAD9ADF19 /* /Users/meisel/projects/zstd/programs/benchfn.c */; };
+		3356ECD1B2264CEEA1898E4E /* /Users/meisel/projects/zstd/programs/datagen.c */ = {isa = PBXBuildFile; fileRef = 0A26FA2E79DD47BFB7140D89 /* /Users/meisel/projects/zstd/programs/datagen.c */; };
+		341BFF93E99E41C5A68F3F7B /* /Users/meisel/projects/zstd/programs/fileio.c */ = {isa = PBXBuildFile; fileRef = 3F63EC7F3A2D4EB196A49A4D /* /Users/meisel/projects/zstd/programs/fileio.c */; };
+		3785879CD0954DCA83893DC2 /* /Users/meisel/projects/zstd/programs/util.c */ = {isa = PBXBuildFile; fileRef = 8FCA3A5EA88640689BFB9A64 /* /Users/meisel/projects/zstd/programs/util.c */; };
+		3AA734F5708E4FA5A54E3711 /* /Users/meisel/projects/zstd/programs/benchzstd.c */ = {isa = PBXBuildFile; fileRef = B772CD3FDABB447BB10C2EF6 /* /Users/meisel/projects/zstd/programs/benchzstd.c */; };
+		3D56F221F91742E289701CAD /* /Users/meisel/projects/zstd/programs/fileio.c */ = {isa = PBXBuildFile; fileRef = D74DCFBC3D0F48248F03ED1D /* /Users/meisel/projects/zstd/programs/fileio.c */; };
+		6FA0465D1EC742FBB9480332 /* /Users/meisel/projects/zstd/programs/fileio_asyncio.c */ = {isa = PBXBuildFile; fileRef = 1689FB60D5E64A399CD073CF /* /Users/meisel/projects/zstd/programs/fileio_asyncio.c */; };
+		75E22DD50F2546938A0151AD /* /Users/meisel/projects/zstd/programs/util.c */ = {isa = PBXBuildFile; fileRef = F4C1A90A6FE541DA87FE848D /* /Users/meisel/projects/zstd/programs/util.c */; };
+		A25B392368EF4AD4ACD4852D /* /Users/meisel/projects/zstd/programs/fileio_asyncio.c */ = {isa = PBXBuildFile; fileRef = 722107CDFC9945FDA70C3A8A /* /Users/meisel/projects/zstd/programs/fileio_asyncio.c */; };
+		BECA0141D74F4258B11CFD58 /* /Users/meisel/projects/zstd/build/cmake/programs/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 66C64CEA6FB3468C93F2C057 /* /Users/meisel/projects/zstd/build/cmake/programs/CMakeLists.txt */; };
+		D0B1937E9DBD495EAF4C2E61 /* /Users/meisel/projects/zstd/programs/zstdcli.c */ = {isa = PBXBuildFile; fileRef = 4DFF0D5FDD8F40C2A8D890D5 /* /Users/meisel/projects/zstd/programs/zstdcli.c */; };
+		D0FB04A627364C329FCA67E3 /* /Users/meisel/projects/zstd/programs/timefn.c */ = {isa = PBXBuildFile; fileRef = 90906081EFD6474EA8B81F23 /* /Users/meisel/projects/zstd/programs/timefn.c */; };
+		FA85FB6E705343968F423C3F /* /Users/meisel/projects/zstd/programs/timefn.c */ = {isa = PBXBuildFile; fileRef = 9D2C5EC18F0E40B886344C67 /* /Users/meisel/projects/zstd/programs/timefn.c */; };
+		FB145EE74C8B4DE9AF3B1DA7 /* /Users/meisel/projects/zstd/build/cmake/programs/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 309A35A3DD4C4FC3B778AA58 /* /Users/meisel/projects/zstd/build/cmake/programs/CMakeLists.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		057DFB6893514B0595C1A964 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		3056E7399E80417C9BB89141 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		8A06F8A45B6B499DAE761C96 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		EAE6B3FFC37B49B68254260C /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		0117FC3BE1304D82A607E462 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A9CF54824B6481CA6E20BAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11A111447FEB451A954710BF;
+			remoteInfo = zstdcat.1;
+		};
+		02CC0DB549CB4CC0B1C28712 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A9CF54824B6481CA6E20BAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6CC9CF7D3BF411B84D9DA88;
+			remoteInfo = ZERO_CHECK;
+		};
+		0F0C68F723384F5BAAA13E6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A9CF54824B6481CA6E20BAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA700F802B6248FDA91B402A;
+			remoteInfo = zstd;
+		};
+		14B6D002DE6049BBAA65112E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A9CF54824B6481CA6E20BAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6CC9CF7D3BF411B84D9DA88;
+			remoteInfo = ZERO_CHECK;
+		};
+		239ACBF1FDF14826906DFF8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A9CF54824B6481CA6E20BAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DED19FC7C2C04DEF8BC3A496;
+			remoteInfo = zstd.1;
+		};
+		25D5EEE77B9E4352A83A7711 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A9CF54824B6481CA6E20BAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA700F802B6248FDA91B402A;
+			remoteInfo = zstd;
+		};
+		3149F3656E204404BE66AC56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A9CF54824B6481CA6E20BAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6CC9CF7D3BF411B84D9DA88;
+			remoteInfo = ZERO_CHECK;
+		};
+		3502303ABFA246DA9323229C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A9CF54824B6481CA6E20BAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6CC9CF7D3BF411B84D9DA88;
+			remoteInfo = ZERO_CHECK;
+		};
+		44DFD9DCC3204602B3A3D309 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A9CF54824B6481CA6E20BAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5839E72207BA43E2A68C6AD0;
+			remoteInfo = ALL_BUILD;
+		};
+		48B442CFC2C84122BED214EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A9CF54824B6481CA6E20BAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6CC9CF7D3BF411B84D9DA88;
+			remoteInfo = ZERO_CHECK;
+		};
+		555CD0C8F99646FC8FD03C04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A9CF54824B6481CA6E20BAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6CC9CF7D3BF411B84D9DA88;
+			remoteInfo = ZERO_CHECK;
+		};
+		5974784868C54BF28765B3DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A9CF54824B6481CA6E20BAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C87BADF5F7274128AFD40972;
+			remoteInfo = "zstd-frugal";
+		};
+		74911DADD1964290ACF71C46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A9CF54824B6481CA6E20BAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31B2087ECAD244068BC0A51A;
+			remoteInfo = zstdless.1;
+		};
+		760772181DAD448C887A1D89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A9CF54824B6481CA6E20BAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA700F802B6248FDA91B402A;
+			remoteInfo = zstd;
+		};
+		91BFAE25AC404BF485286DCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A9CF54824B6481CA6E20BAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA700F802B6248FDA91B402A;
+			remoteInfo = zstd;
+		};
+		9E58A98CFE4142E0892B2BA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A9CF54824B6481CA6E20BAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B0D4D06AC2246F393E1EF97;
+			remoteInfo = zstdmt;
+		};
+		A5219A2ED0314B18B020B4E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A9CF54824B6481CA6E20BAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6CC9CF7D3BF411B84D9DA88;
+			remoteInfo = ZERO_CHECK;
+		};
+		A7BCC03A503443B49A6EDFDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A9CF54824B6481CA6E20BAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DED19FC7C2C04DEF8BC3A496;
+			remoteInfo = zstd.1;
+		};
+		AA6EAB4AAFFF4BABBD89CF8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A9CF54824B6481CA6E20BAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6CC9CF7D3BF411B84D9DA88;
+			remoteInfo = ZERO_CHECK;
+		};
+		BE58F5E07E934F42AD985458 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A9CF54824B6481CA6E20BAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DED19FC7C2C04DEF8BC3A496;
+			remoteInfo = zstd.1;
+		};
+		C018C0C2345C406BA75E0C0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A9CF54824B6481CA6E20BAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 632A42F14B3B4A12A62E66A2;
+			remoteInfo = unzstd;
+		};
+		C067C01B1A6C45F6B2180CE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A9CF54824B6481CA6E20BAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6CC9CF7D3BF411B84D9DA88;
+			remoteInfo = ZERO_CHECK;
+		};
+		D8692EB96D7B4BFAA8070772 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A9CF54824B6481CA6E20BAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8BB81F49A914AFE8F2C231C;
+			remoteInfo = zstdgrep.1;
+		};
+		E2336384F4BC40DC96B757C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A9CF54824B6481CA6E20BAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6CC9CF7D3BF411B84D9DA88;
+			remoteInfo = ZERO_CHECK;
+		};
+		E9039121114E425B9381E167 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A9CF54824B6481CA6E20BAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6CC9CF7D3BF411B84D9DA88;
+			remoteInfo = ZERO_CHECK;
+		};
+		F79EAF0AC1BF4719A1CF7FE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A9CF54824B6481CA6E20BAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 326ADEE015BA46FBAD712B56;
+			remoteInfo = unzstd.1;
+		};
+		FB2C274622B248FBA4D49AA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A9CF54824B6481CA6E20BAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0751FFDC799F454DA81C96FA;
+			remoteInfo = zstdcat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A26FA2E79DD47BFB7140D89 /* /Users/meisel/projects/zstd/programs/datagen.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = datagen.c; path = /Users/meisel/projects/zstd/programs/datagen.c; sourceTree = "<absolute>"; };
+		0C1574775BF64B38A676EDBC /* /Users/meisel/projects/zstd/programs/zstdcli.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zstdcli.c; path = /Users/meisel/projects/zstd/programs/zstdcli.c; sourceTree = "<absolute>"; };
+		1689FB60D5E64A399CD073CF /* /Users/meisel/projects/zstd/programs/fileio_asyncio.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fileio_asyncio.c; path = /Users/meisel/projects/zstd/programs/fileio_asyncio.c; sourceTree = "<absolute>"; };
+		309A35A3DD4C4FC3B778AA58 /* /Users/meisel/projects/zstd/build/cmake/programs/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		34FBF7A05E3B49109A781C35 /* /Users/meisel/projects/zstd/programs/dibio.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = dibio.c; path = /Users/meisel/projects/zstd/programs/dibio.c; sourceTree = "<absolute>"; };
+		3C18E2729A7343E4BCFEE491 /* /Users/meisel/projects/zstd/build/cmake/programs/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		3F63EC7F3A2D4EB196A49A4D /* /Users/meisel/projects/zstd/programs/fileio.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fileio.c; path = /Users/meisel/projects/zstd/programs/fileio.c; sourceTree = "<absolute>"; };
+		4DFF0D5FDD8F40C2A8D890D5 /* /Users/meisel/projects/zstd/programs/zstdcli.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zstdcli.c; path = /Users/meisel/projects/zstd/programs/zstdcli.c; sourceTree = "<absolute>"; };
+		535C968610A7464C8AF1898F /* /Users/meisel/projects/zstd/build/cmake/programs/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		56A4BD92EB8544EFAD9ADF19 /* /Users/meisel/projects/zstd/programs/benchfn.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = benchfn.c; path = /Users/meisel/projects/zstd/programs/benchfn.c; sourceTree = "<absolute>"; };
+		66C64CEA6FB3468C93F2C057 /* /Users/meisel/projects/zstd/build/cmake/programs/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		6F43C623E8334DE48D356EA7 /* /Users/meisel/projects/zstd/build/cmake/programs/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		722107CDFC9945FDA70C3A8A /* /Users/meisel/projects/zstd/programs/fileio_asyncio.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fileio_asyncio.c; path = /Users/meisel/projects/zstd/programs/fileio_asyncio.c; sourceTree = "<absolute>"; };
+		7BC4BF25B7DB412EB7FEC177 /* zstd-frugal */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "zstd-frugal"; sourceTree = BUILT_PRODUCTS_DIR; };
+		86796A8129CF438FB47A8676 /* /Users/meisel/projects/zstd/build/cmake/programs/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		8FCA3A5EA88640689BFB9A64 /* /Users/meisel/projects/zstd/programs/util.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = util.c; path = /Users/meisel/projects/zstd/programs/util.c; sourceTree = "<absolute>"; };
+		90906081EFD6474EA8B81F23 /* /Users/meisel/projects/zstd/programs/timefn.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = timefn.c; path = /Users/meisel/projects/zstd/programs/timefn.c; sourceTree = "<absolute>"; };
+		9D2C5EC18F0E40B886344C67 /* /Users/meisel/projects/zstd/programs/timefn.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = timefn.c; path = /Users/meisel/projects/zstd/programs/timefn.c; sourceTree = "<absolute>"; };
+		AC28611CD3F1457DB0E701CC /* /Users/meisel/projects/zstd/build/cmake/programs/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		B772CD3FDABB447BB10C2EF6 /* /Users/meisel/projects/zstd/programs/benchzstd.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = benchzstd.c; path = /Users/meisel/projects/zstd/programs/benchzstd.c; sourceTree = "<absolute>"; };
+		BD61EB9A7E774AD28316807B /* /Users/meisel/projects/zstd/build/cmake/programs/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		D4315CDB0D7041BBBF8E64F4 /* zstd */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = zstd; sourceTree = BUILT_PRODUCTS_DIR; };
+		D74DCFBC3D0F48248F03ED1D /* /Users/meisel/projects/zstd/programs/fileio.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fileio.c; path = /Users/meisel/projects/zstd/programs/fileio.c; sourceTree = "<absolute>"; };
+		DE74DD1F892A4EF990F3A8C9 /* /Users/meisel/projects/zstd/build/cmake/programs/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		EE74584609A041F29B7157E3 /* /Users/meisel/projects/zstd/build/cmake/programs/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		F2C6BC1CEE6C4B8698456135 /* /Users/meisel/projects/zstd/build/cmake/programs/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		F4C1A90A6FE541DA87FE848D /* /Users/meisel/projects/zstd/programs/util.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = util.c; path = /Users/meisel/projects/zstd/programs/util.c; sourceTree = "<absolute>"; };
+		FAF210CF9C8345C987EF081C /* /Users/meisel/projects/zstd/programs/zstdcli_trace.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = zstdcli_trace.c; path = /Users/meisel/projects/zstd/programs/zstdcli_trace.c; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B4632F9297904404AEFB95B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB726DE11C6446A79A6B14BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B6E4243DABD484DBD04D16B /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F63EC7F3A2D4EB196A49A4D /* /Users/meisel/projects/zstd/programs/fileio.c */,
+				722107CDFC9945FDA70C3A8A /* /Users/meisel/projects/zstd/programs/fileio_asyncio.c */,
+				9D2C5EC18F0E40B886344C67 /* /Users/meisel/projects/zstd/programs/timefn.c */,
+				F4C1A90A6FE541DA87FE848D /* /Users/meisel/projects/zstd/programs/util.c */,
+				0C1574775BF64B38A676EDBC /* /Users/meisel/projects/zstd/programs/zstdcli.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		0D0EA7C438FF4A8F972F4B0E /* zstdmt */ = {
+			isa = PBXGroup;
+			children = (
+				C2B45AA85C2642A0A5DEF22C /* CMake Rules */,
+				F2C6BC1CEE6C4B8698456135 /* /Users/meisel/projects/zstd/build/cmake/programs/CMakeLists.txt */,
+			);
+			name = zstdmt;
+			sourceTree = "<group>";
+		};
+		1888A89BE0DE4A87A380A185 /* zstdcat.1 */ = {
+			isa = PBXGroup;
+			children = (
+				3DA403EA56E245B3B725696B /* CMake Rules */,
+				3C18E2729A7343E4BCFEE491 /* /Users/meisel/projects/zstd/build/cmake/programs/CMakeLists.txt */,
+			);
+			name = zstdcat.1;
+			sourceTree = "<group>";
+		};
+		1C32C888F390414AA0756266 /* unzstd */ = {
+			isa = PBXGroup;
+			children = (
+				E4F2EAF83FA7448AA369D393 /* CMake Rules */,
+				AC28611CD3F1457DB0E701CC /* /Users/meisel/projects/zstd/build/cmake/programs/CMakeLists.txt */,
+			);
+			name = unzstd;
+			sourceTree = "<group>";
+		};
+		2159CF8457F34C5F802169E5 /* unzstd.1 */ = {
+			isa = PBXGroup;
+			children = (
+				AA85D323417941CEBC45F5A5 /* CMake Rules */,
+				535C968610A7464C8AF1898F /* /Users/meisel/projects/zstd/build/cmake/programs/CMakeLists.txt */,
+			);
+			name = unzstd.1;
+			sourceTree = "<group>";
+		};
+		3559844A8A92491394BDC969 /* zstdless.1 */ = {
+			isa = PBXGroup;
+			children = (
+				A2BD267152504670B39E58E7 /* CMake Rules */,
+				BD61EB9A7E774AD28316807B /* /Users/meisel/projects/zstd/build/cmake/programs/CMakeLists.txt */,
+			);
+			name = zstdless.1;
+			sourceTree = "<group>";
+		};
+		3917678978224D74A8D3545E /* zstdgrep.1 */ = {
+			isa = PBXGroup;
+			children = (
+				626617B60A144FD3875702B3 /* CMake Rules */,
+				6F43C623E8334DE48D356EA7 /* /Users/meisel/projects/zstd/build/cmake/programs/CMakeLists.txt */,
+			);
+			name = zstdgrep.1;
+			sourceTree = "<group>";
+		};
+		39E46F7FBCA44844BCE0AA4E /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				D3BC4FEEBA7641C39C520F26 /* CMake Rules */,
+				DE74DD1F892A4EF990F3A8C9 /* /Users/meisel/projects/zstd/build/cmake/programs/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		3B203611AE1F414680863E9E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3CF1360D2BF74CA483E3888C = {
+			isa = PBXGroup;
+			children = (
+				CD324E73EC2B4F589706B698 /* zstd */,
+				8F675C0C70B945739C2FB597 /* zstdcat */,
+				1C32C888F390414AA0756266 /* unzstd */,
+				6826EF113C0B456B8D0FABBE /* zstd.1 */,
+				3917678978224D74A8D3545E /* zstdgrep.1 */,
+				3559844A8A92491394BDC969 /* zstdless.1 */,
+				1888A89BE0DE4A87A380A185 /* zstdcat.1 */,
+				2159CF8457F34C5F802169E5 /* unzstd.1 */,
+				A0FB64EADE154144AF3AF1B2 /* zstd-frugal */,
+				0D0EA7C438FF4A8F972F4B0E /* zstdmt */,
+				39E46F7FBCA44844BCE0AA4E /* ALL_BUILD */,
+				5F737FE4531544D796A8A124 /* Products */,
+				3B203611AE1F414680863E9E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3DA403EA56E245B3B725696B /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		3E7900C21AE4465C8D37A0CF /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		5F737FE4531544D796A8A124 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4315CDB0D7041BBBF8E64F4 /* zstd */,
+				7BC4BF25B7DB412EB7FEC177 /* zstd-frugal */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		626617B60A144FD3875702B3 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		6826EF113C0B456B8D0FABBE /* zstd.1 */ = {
+			isa = PBXGroup;
+			children = (
+				D2D9B13F93614785ADB47BC5 /* CMake Rules */,
+				EE74584609A041F29B7157E3 /* /Users/meisel/projects/zstd/build/cmake/programs/CMakeLists.txt */,
+			);
+			name = zstd.1;
+			sourceTree = "<group>";
+		};
+		8F675C0C70B945739C2FB597 /* zstdcat */ = {
+			isa = PBXGroup;
+			children = (
+				3E7900C21AE4465C8D37A0CF /* CMake Rules */,
+				86796A8129CF438FB47A8676 /* /Users/meisel/projects/zstd/build/cmake/programs/CMakeLists.txt */,
+			);
+			name = zstdcat;
+			sourceTree = "<group>";
+		};
+		A0FB64EADE154144AF3AF1B2 /* zstd-frugal */ = {
+			isa = PBXGroup;
+			children = (
+				0B6E4243DABD484DBD04D16B /* Source Files */,
+				309A35A3DD4C4FC3B778AA58 /* /Users/meisel/projects/zstd/build/cmake/programs/CMakeLists.txt */,
+			);
+			name = "zstd-frugal";
+			sourceTree = "<group>";
+		};
+		A2BD267152504670B39E58E7 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		AA85D323417941CEBC45F5A5 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		B8C12E7C6A5B4FFA8C79D664 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				56A4BD92EB8544EFAD9ADF19 /* /Users/meisel/projects/zstd/programs/benchfn.c */,
+				B772CD3FDABB447BB10C2EF6 /* /Users/meisel/projects/zstd/programs/benchzstd.c */,
+				0A26FA2E79DD47BFB7140D89 /* /Users/meisel/projects/zstd/programs/datagen.c */,
+				34FBF7A05E3B49109A781C35 /* /Users/meisel/projects/zstd/programs/dibio.c */,
+				D74DCFBC3D0F48248F03ED1D /* /Users/meisel/projects/zstd/programs/fileio.c */,
+				1689FB60D5E64A399CD073CF /* /Users/meisel/projects/zstd/programs/fileio_asyncio.c */,
+				90906081EFD6474EA8B81F23 /* /Users/meisel/projects/zstd/programs/timefn.c */,
+				8FCA3A5EA88640689BFB9A64 /* /Users/meisel/projects/zstd/programs/util.c */,
+				4DFF0D5FDD8F40C2A8D890D5 /* /Users/meisel/projects/zstd/programs/zstdcli.c */,
+				FAF210CF9C8345C987EF081C /* /Users/meisel/projects/zstd/programs/zstdcli_trace.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		C2B45AA85C2642A0A5DEF22C /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		CD324E73EC2B4F589706B698 /* zstd */ = {
+			isa = PBXGroup;
+			children = (
+				B8C12E7C6A5B4FFA8C79D664 /* Source Files */,
+				66C64CEA6FB3468C93F2C057 /* /Users/meisel/projects/zstd/build/cmake/programs/CMakeLists.txt */,
+			);
+			name = zstd;
+			sourceTree = "<group>";
+		};
+		D2D9B13F93614785ADB47BC5 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		D3BC4FEEBA7641C39C520F26 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		E4F2EAF83FA7448AA369D393 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA700F802B6248FDA91B402A /* zstd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BC6B6E24ACD45FBB3D7EAE4 /* Build configuration list for PBXNativeTarget "zstd" */;
+			buildPhases = (
+				EF88E95C82B94E5BB7C84F4C /* Sources */,
+				CB726DE11C6446A79A6B14BC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDA806A308764E30B119ED3C /* PBXTargetDependency */,
+			);
+			name = zstd;
+			productName = zstd;
+			productReference = D4315CDB0D7041BBBF8E64F4 /* zstd */;
+			productType = "com.apple.product-type.tool";
+		};
+		C87BADF5F7274128AFD40972 /* zstd-frugal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55DF7B80D68644CC9A9770ED /* Build configuration list for PBXNativeTarget "zstd-frugal" */;
+			buildPhases = (
+				FD27B7465B5444C18D55653E /* Sources */,
+				B4632F9297904404AEFB95B3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB83ED57D44D4824900DBEC3 /* PBXTargetDependency */,
+			);
+			name = "zstd-frugal";
+			productName = "zstd-frugal";
+			productReference = 7BC4BF25B7DB412EB7FEC177 /* zstd-frugal */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A9CF54824B6481CA6E20BAB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+			};
+			buildConfigurationList = FBBC38B6332043069172CBE6 /* Build configuration list for PBXProject "programs" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				057DFB6893514B0595C1A964 /* Debug */,
+				3056E7399E80417C9BB89141 /* Release */,
+				EAE6B3FFC37B49B68254260C /* MinSizeRel */,
+				8A06F8A45B6B499DAE761C96 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 3CF1360D2BF74CA483E3888C;
+			projectDirPath = /Users/meisel/projects/zstd/build/cmake/programs;
+			projectRoot = "";
+			targets = (
+				5839E72207BA43E2A68C6AD0 /* ALL_BUILD */,
+				A6CC9CF7D3BF411B84D9DA88 /* ZERO_CHECK */,
+				711CF9BB591E40089DB69D28 /* install */,
+				632A42F14B3B4A12A62E66A2 /* unzstd */,
+				326ADEE015BA46FBAD712B56 /* unzstd.1 */,
+				BA700F802B6248FDA91B402A /* zstd */,
+				C87BADF5F7274128AFD40972 /* zstd-frugal */,
+				DED19FC7C2C04DEF8BC3A496 /* zstd.1 */,
+				0751FFDC799F454DA81C96FA /* zstdcat */,
+				11A111447FEB451A954710BF /* zstdcat.1 */,
+				F8BB81F49A914AFE8F2C231C /* zstdgrep.1 */,
+				31B2087ECAD244068BC0A51A /* zstdless.1 */,
+				5B0D4D06AC2246F393E1EF97 /* zstdmt */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19BF679BB36AB9AE6CC55C45 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		1B5450643E4DA7217F2DB2D9 /* Generate CMakeFiles/zstdcat.1 */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/zstdcat.1";
+			outputPaths = (
+/Users/meisel/projects/zstd/build/cmake/xcode/programs/CMakeFiles/zstdcat.1			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/meisel/projects/zstd/build/cmake/xcode/programs
+  /opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -E create_symlink zstd.1 zstdcat.1
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/meisel/projects/zstd/build/cmake/xcode/programs
+  /opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -E create_symlink zstd.1 zstdcat.1
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/meisel/projects/zstd/build/cmake/xcode/programs
+  /opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -E create_symlink zstd.1 zstdcat.1
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/meisel/projects/zstd/build/cmake/xcode/programs
+  /opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -E create_symlink zstd.1 zstdcat.1
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		1D3C3FD0236A3D11E51C75BB /* Generate CMakeFiles/zstdcat */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+/Users/meisel/projects/zstd/build/cmake/xcode/programs/Debug/zstd,/Users/meisel/projects/zstd/build/cmake/xcode/programs/MinSizeRel/zstd,/Users/meisel/projects/zstd/build/cmake/xcode/programs/RelWithDebInfo/zstd,/Users/meisel/projects/zstd/build/cmake/xcode/programs/Release/zstd			);
+			name = "Generate CMakeFiles/zstdcat";
+			outputPaths = (
+/Users/meisel/projects/zstd/build/cmake/xcode/programs/CMakeFiles/zstdcat			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/meisel/projects/zstd/build/cmake/xcode/programs
+  /opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -E create_symlink zstd zstdcat
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/meisel/projects/zstd/build/cmake/xcode/programs
+  /opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -E create_symlink zstd zstdcat
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/meisel/projects/zstd/build/cmake/xcode/programs
+  /opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -E create_symlink zstd zstdcat
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/meisel/projects/zstd/build/cmake/xcode/programs
+  /opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -E create_symlink zstd zstdcat
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		2141DCC825DFC1C6A9D879F7 /* Generate CMakeFiles/unzstd.1 */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/unzstd.1";
+			outputPaths = (
+/Users/meisel/projects/zstd/build/cmake/xcode/programs/CMakeFiles/unzstd.1			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/meisel/projects/zstd/build/cmake/xcode/programs
+  /opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -E create_symlink zstd.1 unzstd.1
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/meisel/projects/zstd/build/cmake/xcode/programs
+  /opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -E create_symlink zstd.1 unzstd.1
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/meisel/projects/zstd/build/cmake/xcode/programs
+  /opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -E create_symlink zstd.1 unzstd.1
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/meisel/projects/zstd/build/cmake/xcode/programs
+  /opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -E create_symlink zstd.1 unzstd.1
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		28B0098209CA960AF8FFF107 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		2DBAD11E5A1AA319A8FFC9CC /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+/Users/meisel/projects/zstd/build/cmake/xcode/programs/CMakeFiles/ALL_BUILD			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/meisel/projects/zstd/build/cmake/xcode/programs
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/meisel/projects/zstd/build/cmake/xcode/programs
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/meisel/projects/zstd/build/cmake/xcode/programs
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/meisel/projects/zstd/build/cmake/xcode/programs
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		72E1D661C2933002278BC129 /* Generate CMakeFiles/zstdmt */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+/Users/meisel/projects/zstd/build/cmake/xcode/programs/Debug/zstd,/Users/meisel/projects/zstd/build/cmake/xcode/programs/MinSizeRel/zstd,/Users/meisel/projects/zstd/build/cmake/xcode/programs/RelWithDebInfo/zstd,/Users/meisel/projects/zstd/build/cmake/xcode/programs/Release/zstd			);
+			name = "Generate CMakeFiles/zstdmt";
+			outputPaths = (
+/Users/meisel/projects/zstd/build/cmake/xcode/programs/CMakeFiles/zstdmt			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/meisel/projects/zstd/build/cmake/xcode/programs
+  /opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -E create_symlink zstd zstdmt
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/meisel/projects/zstd/build/cmake/xcode/programs
+  /opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -E create_symlink zstd zstdmt
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/meisel/projects/zstd/build/cmake/xcode/programs
+  /opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -E create_symlink zstd zstdmt
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/meisel/projects/zstd/build/cmake/xcode/programs
+  /opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -E create_symlink zstd zstdmt
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		73399D05792F1CCBCEC7E119 /* Generate CMakeFiles/zstdless.1 */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/zstdless.1";
+			outputPaths = (
+/Users/meisel/projects/zstd/build/cmake/xcode/programs/CMakeFiles/zstdless.1			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/meisel/projects/zstd/build/cmake/xcode/programs
+  /opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -E copy /Users/meisel/projects/zstd/build/cmake/../../programs/zstdless.1 .
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/meisel/projects/zstd/build/cmake/xcode/programs
+  /opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -E copy /Users/meisel/projects/zstd/build/cmake/../../programs/zstdless.1 .
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/meisel/projects/zstd/build/cmake/xcode/programs
+  /opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -E copy /Users/meisel/projects/zstd/build/cmake/../../programs/zstdless.1 .
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/meisel/projects/zstd/build/cmake/xcode/programs
+  /opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -E copy /Users/meisel/projects/zstd/build/cmake/../../programs/zstdless.1 .
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		7B466555A5A343335C80EA20 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		7E5D61D480673B45A023CAE8 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		7F7DB2B9B5ED27C5EA894735 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		835C5E1B731CFC30C5254891 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		87AF4882E018677E2624B544 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/meisel/projects/zstd/build/cmake/xcode/programs
+  /opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/meisel/projects/zstd/build/cmake/xcode/programs
+  /opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/meisel/projects/zstd/build/cmake/xcode/programs
+  /opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/meisel/projects/zstd/build/cmake/xcode/programs
+  /opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		966B239B45B391786FEBBF24 /* Generate CMakeFiles/zstd.1 */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/zstd.1";
+			outputPaths = (
+/Users/meisel/projects/zstd/build/cmake/xcode/programs/CMakeFiles/zstd.1			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/meisel/projects/zstd/build/cmake/xcode/programs
+  /opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -E copy /Users/meisel/projects/zstd/build/cmake/../../programs/zstd.1 .
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/meisel/projects/zstd/build/cmake/xcode/programs
+  /opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -E copy /Users/meisel/projects/zstd/build/cmake/../../programs/zstd.1 .
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/meisel/projects/zstd/build/cmake/xcode/programs
+  /opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -E copy /Users/meisel/projects/zstd/build/cmake/../../programs/zstd.1 .
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/meisel/projects/zstd/build/cmake/xcode/programs
+  /opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -E copy /Users/meisel/projects/zstd/build/cmake/../../programs/zstd.1 .
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		A4B46F4986E562594CD3071D /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+/Users/meisel/projects/zstd/build/cmake/xcode/programs/CMakeFiles/ZERO_CHECK			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/meisel/projects/zstd/build/cmake/xcode/programs
+  make -f /Users/meisel/projects/zstd/build/cmake/xcode/programs/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/meisel/projects/zstd/build/cmake/xcode/programs
+  make -f /Users/meisel/projects/zstd/build/cmake/xcode/programs/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/meisel/projects/zstd/build/cmake/xcode/programs
+  make -f /Users/meisel/projects/zstd/build/cmake/xcode/programs/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/meisel/projects/zstd/build/cmake/xcode/programs
+  make -f /Users/meisel/projects/zstd/build/cmake/xcode/programs/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		D27A91DF71CDEFB64CB60938 /* Generate CMakeFiles/unzstd */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+/Users/meisel/projects/zstd/build/cmake/xcode/programs/Debug/zstd,/Users/meisel/projects/zstd/build/cmake/xcode/programs/MinSizeRel/zstd,/Users/meisel/projects/zstd/build/cmake/xcode/programs/RelWithDebInfo/zstd,/Users/meisel/projects/zstd/build/cmake/xcode/programs/Release/zstd			);
+			name = "Generate CMakeFiles/unzstd";
+			outputPaths = (
+/Users/meisel/projects/zstd/build/cmake/xcode/programs/CMakeFiles/unzstd			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/meisel/projects/zstd/build/cmake/xcode/programs
+  /opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -E create_symlink zstd unzstd
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/meisel/projects/zstd/build/cmake/xcode/programs
+  /opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -E create_symlink zstd unzstd
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/meisel/projects/zstd/build/cmake/xcode/programs
+  /opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -E create_symlink zstd unzstd
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/meisel/projects/zstd/build/cmake/xcode/programs
+  /opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -E create_symlink zstd unzstd
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		DCBAE8DB27B9495209036D70 /* Generate CMakeFiles/zstdgrep.1 */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/zstdgrep.1";
+			outputPaths = (
+/Users/meisel/projects/zstd/build/cmake/xcode/programs/CMakeFiles/zstdgrep.1			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/meisel/projects/zstd/build/cmake/xcode/programs
+  /opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -E copy /Users/meisel/projects/zstd/build/cmake/../../programs/zstdgrep.1 .
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/meisel/projects/zstd/build/cmake/xcode/programs
+  /opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -E copy /Users/meisel/projects/zstd/build/cmake/../../programs/zstdgrep.1 .
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/meisel/projects/zstd/build/cmake/xcode/programs
+  /opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -E copy /Users/meisel/projects/zstd/build/cmake/../../programs/zstdgrep.1 .
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/meisel/projects/zstd/build/cmake/xcode/programs
+  /opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -E copy /Users/meisel/projects/zstd/build/cmake/../../programs/zstdgrep.1 .
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		DFEA0F1ED5027FED3625DECF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		F6DFF6EB1A8D54FFB4E210AB = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF88E95C82B94E5BB7C84F4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15A658EBBD864F599516C875 /* /Users/meisel/projects/zstd/programs/benchfn.c */,
+				3AA734F5708E4FA5A54E3711 /* /Users/meisel/projects/zstd/programs/benchzstd.c */,
+				3356ECD1B2264CEEA1898E4E /* /Users/meisel/projects/zstd/programs/datagen.c */,
+				15A1A63A7A0A4E2EACF78408 /* /Users/meisel/projects/zstd/programs/dibio.c */,
+				3D56F221F91742E289701CAD /* /Users/meisel/projects/zstd/programs/fileio.c */,
+				6FA0465D1EC742FBB9480332 /* /Users/meisel/projects/zstd/programs/fileio_asyncio.c */,
+				D0FB04A627364C329FCA67E3 /* /Users/meisel/projects/zstd/programs/timefn.c */,
+				3785879CD0954DCA83893DC2 /* /Users/meisel/projects/zstd/programs/util.c */,
+				D0B1937E9DBD495EAF4C2E61 /* /Users/meisel/projects/zstd/programs/zstdcli.c */,
+				02B4868E0F5948DE98A20111 /* /Users/meisel/projects/zstd/programs/zstdcli_trace.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD27B7465B5444C18D55653E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				341BFF93E99E41C5A68F3F7B /* /Users/meisel/projects/zstd/programs/fileio.c */,
+				A25B392368EF4AD4ACD4852D /* /Users/meisel/projects/zstd/programs/fileio_asyncio.c */,
+				FA85FB6E705343968F423C3F /* /Users/meisel/projects/zstd/programs/timefn.c */,
+				75E22DD50F2546938A0151AD /* /Users/meisel/projects/zstd/programs/util.c */,
+				0253311AD83C49AA977BBB8B /* /Users/meisel/projects/zstd/programs/zstdcli.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0C6946518F6245C69E4ADEA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31B2087ECAD244068BC0A51A /* zstdless.1 */;
+			targetProxy = 74911DADD1964290ACF71C46 /* PBXContainerItemProxy */;
+		};
+		1357738DD2B54DAFA205FFEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6CC9CF7D3BF411B84D9DA88 /* ZERO_CHECK */;
+			targetProxy = 48B442CFC2C84122BED214EE /* PBXContainerItemProxy */;
+		};
+		152F898AB53B437FB82C0031 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5839E72207BA43E2A68C6AD0 /* ALL_BUILD */;
+			targetProxy = 44DFD9DCC3204602B3A3D309 /* PBXContainerItemProxy */;
+		};
+		2E9AE0A4494E49A899346011 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6CC9CF7D3BF411B84D9DA88 /* ZERO_CHECK */;
+			targetProxy = C067C01B1A6C45F6B2180CE1 /* PBXContainerItemProxy */;
+		};
+		36620CF4C3D441BEB62F2C8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6CC9CF7D3BF411B84D9DA88 /* ZERO_CHECK */;
+			targetProxy = E2336384F4BC40DC96B757C2 /* PBXContainerItemProxy */;
+		};
+		4264FE7CA2DF4A1FAE4ABE56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11A111447FEB451A954710BF /* zstdcat.1 */;
+			targetProxy = 0117FC3BE1304D82A607E462 /* PBXContainerItemProxy */;
+		};
+		4D3A95A0468641F2B75F91E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6CC9CF7D3BF411B84D9DA88 /* ZERO_CHECK */;
+			targetProxy = 02CC0DB549CB4CC0B1C28712 /* PBXContainerItemProxy */;
+		};
+		665D77A2FA3A4E29B20BCFC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6CC9CF7D3BF411B84D9DA88 /* ZERO_CHECK */;
+			targetProxy = 14B6D002DE6049BBAA65112E /* PBXContainerItemProxy */;
+		};
+		6D0B4278B0194A06BC5EE00C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA700F802B6248FDA91B402A /* zstd */;
+			targetProxy = 25D5EEE77B9E4352A83A7711 /* PBXContainerItemProxy */;
+		};
+		80A84F4CAE8F476BA2242DBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DED19FC7C2C04DEF8BC3A496 /* zstd.1 */;
+			targetProxy = BE58F5E07E934F42AD985458 /* PBXContainerItemProxy */;
+		};
+		86C8C145607D41B8BC0C6CEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0751FFDC799F454DA81C96FA /* zstdcat */;
+			targetProxy = FB2C274622B248FBA4D49AA0 /* PBXContainerItemProxy */;
+		};
+		889695E17CF54020BCE17660 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DED19FC7C2C04DEF8BC3A496 /* zstd.1 */;
+			targetProxy = 239ACBF1FDF14826906DFF8C /* PBXContainerItemProxy */;
+		};
+		8BB979E9DE5E4F3CAFDF17FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA700F802B6248FDA91B402A /* zstd */;
+			targetProxy = 760772181DAD448C887A1D89 /* PBXContainerItemProxy */;
+		};
+		8EB9281E696D4B9489E82965 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6CC9CF7D3BF411B84D9DA88 /* ZERO_CHECK */;
+			targetProxy = 3502303ABFA246DA9323229C /* PBXContainerItemProxy */;
+		};
+		9784585BE26E4692A3E696DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B0D4D06AC2246F393E1EF97 /* zstdmt */;
+			targetProxy = 9E58A98CFE4142E0892B2BA9 /* PBXContainerItemProxy */;
+		};
+		9A1076B697BA4B1AB238EFBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA700F802B6248FDA91B402A /* zstd */;
+			targetProxy = 91BFAE25AC404BF485286DCE /* PBXContainerItemProxy */;
+		};
+		AF38B02900D94096902DB5DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DED19FC7C2C04DEF8BC3A496 /* zstd.1 */;
+			targetProxy = A7BCC03A503443B49A6EDFDE /* PBXContainerItemProxy */;
+		};
+		BB83ED57D44D4824900DBEC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6CC9CF7D3BF411B84D9DA88 /* ZERO_CHECK */;
+			targetProxy = E9039121114E425B9381E167 /* PBXContainerItemProxy */;
+		};
+		BD8815BE410141F8B7F5727A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 326ADEE015BA46FBAD712B56 /* unzstd.1 */;
+			targetProxy = F79EAF0AC1BF4719A1CF7FE8 /* PBXContainerItemProxy */;
+		};
+		BDA806A308764E30B119ED3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6CC9CF7D3BF411B84D9DA88 /* ZERO_CHECK */;
+			targetProxy = A5219A2ED0314B18B020B4E6 /* PBXContainerItemProxy */;
+		};
+		BE02EBF6A5C14183B40625BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6CC9CF7D3BF411B84D9DA88 /* ZERO_CHECK */;
+			targetProxy = AA6EAB4AAFFF4BABBD89CF8B /* PBXContainerItemProxy */;
+		};
+		C448EF7A4700404D9B6853E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6CC9CF7D3BF411B84D9DA88 /* ZERO_CHECK */;
+			targetProxy = 555CD0C8F99646FC8FD03C04 /* PBXContainerItemProxy */;
+		};
+		CD8B134DF37D4B6A9FEE1B4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA700F802B6248FDA91B402A /* zstd */;
+			targetProxy = 0F0C68F723384F5BAAA13E6F /* PBXContainerItemProxy */;
+		};
+		D3F13FDB0FBA42B1A2D99FF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8BB81F49A914AFE8F2C231C /* zstdgrep.1 */;
+			targetProxy = D8692EB96D7B4BFAA8070772 /* PBXContainerItemProxy */;
+		};
+		DE93E1E49F9449D2BFF6998E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C87BADF5F7274128AFD40972 /* zstd-frugal */;
+			targetProxy = 5974784868C54BF28765B3DC /* PBXContainerItemProxy */;
+		};
+		F41C666DF83744A2A815D338 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6CC9CF7D3BF411B84D9DA88 /* ZERO_CHECK */;
+			targetProxy = 3149F3656E204404BE66AC56 /* PBXContainerItemProxy */;
+		};
+		F90E91F34A2F4D90A6E89303 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 632A42F14B3B4A12A62E66A2 /* unzstd */;
+			targetProxy = C018C0C2345C406BA75E0C0C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0215E4B563E44E648E3AB26B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = zstdcat.1;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		0ECAD23D3B754D2EA876B276 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = unzstd;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		13855164649F43B6BBB35DAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		1E23706647A04C8D9AD267F3 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = zstdcat.1;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		266036515B754CDDA5C09E6B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		270E5A3D9B2F4370A4700DBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/meisel/projects/zstd/build/cmake/xcode/programs/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",ZSTD_NOBENCH,ZSTD_NODICT,ZSTD_NOTRACE,"'XXH_NAMESPACE=ZSTD_'","'ZSTD_LEGACY_SUPPORT=5'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/meisel/projects/zstd/build/cmake/xcode/programs,/Users/meisel/projects/zstd/build/cmake/programs,/Users/meisel/projects/zstd/build/cmake/../../programs,/Users/meisel/projects/zstd/build/cmake/../../lib,/Users/meisel/projects/zstd/build/cmake/../../lib/common,/Users/meisel/projects/zstd/build/cmake/../../lib/compress,/Users/meisel/projects/zstd/build/cmake/../../lib/dictBuilder,/Users/meisel/projects/zstd/build/cmake/../../programs/legacy,/Users/meisel/projects/zstd/build/cmake/../../lib/legacy,"$(inherited)");
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (" -Wall -Wextra -Wundef -Wshadow -Wcast-align -Wcast-qual -Wstrict-prototypes -Qunused-arguments -Wa,--noexecstack     -DNDEBUG ","$(inherited)");
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/meisel/projects/zstd/build/cmake/xcode/lib/Release/libzstd.a,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "zstd-frugal";
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/meisel/projects/zstd/build/cmake/xcode/build/zstd-frugal.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		2B7956371CB44CF9BF3AB045 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		2B8DBDEE6C434228A4BB3842 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = "/Applications/Xcode-14.3.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk";
+				SYMROOT = /Users/meisel/projects/zstd/build/cmake/xcode/build;
+			};
+			name = Debug;
+		};
+		2D073AAC648B41C7AE8F3588 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = zstdgrep.1;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		300AE72E412043A6B0648A26 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		34A97C434D8D4A41AFE7758F /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = unzstd.1;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		43703E9C22A441618C106E81 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = zstd.1;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		4A18517510284A4DA06B9388 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = "/Applications/Xcode-14.3.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/meisel/projects/zstd/build/cmake/xcode/build;
+			};
+			name = MinSizeRel;
+		};
+		4EFF219729F0486FBC41038D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		55F9FA0F95F34EB4AECA6EEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = unzstd;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		576A7914219F469BB77C9206 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = unzstd;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		5B3C82635573409EAE2A20AF /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = zstdless.1;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		5D3180EF31524D12BF4BB658 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = "/Applications/Xcode-14.3.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/meisel/projects/zstd/build/cmake/xcode/build;
+			};
+			name = Release;
+		};
+		6094CDE0362E4B1284066412 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = zstdgrep.1;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		630D135B99964E209CACBCE2 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = zstdcat;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		67D26F0FFB35473193F495A6 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = zstd.1;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		6ABEE63BF36746C69CA59D75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = zstdcat;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		6C554B3CA9FF40569BC1ACF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = zstdmt;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		772E9106D3A14DEFB2F3C91E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/meisel/projects/zstd/build/cmake/xcode/programs/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",ZSTD_NOBENCH,ZSTD_NODICT,ZSTD_NOTRACE,"'XXH_NAMESPACE=ZSTD_'","'ZSTD_LEGACY_SUPPORT=5'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/meisel/projects/zstd/build/cmake/xcode/programs,/Users/meisel/projects/zstd/build/cmake/programs,/Users/meisel/projects/zstd/build/cmake/../../programs,/Users/meisel/projects/zstd/build/cmake/../../lib,/Users/meisel/projects/zstd/build/cmake/../../lib/common,/Users/meisel/projects/zstd/build/cmake/../../lib/compress,/Users/meisel/projects/zstd/build/cmake/../../lib/dictBuilder,/Users/meisel/projects/zstd/build/cmake/../../programs/legacy,/Users/meisel/projects/zstd/build/cmake/../../lib/legacy,"$(inherited)");
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (" -Wall -Wextra -Wundef -Wshadow -Wcast-align -Wcast-qual -Wstrict-prototypes -Qunused-arguments -Wa,--noexecstack    ","$(inherited)");
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/meisel/projects/zstd/build/cmake/xcode/lib/Debug/libzstd.a,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "zstd-frugal";
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/meisel/projects/zstd/build/cmake/xcode/build/zstd-frugal.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		77E336EE4DDA4526A2FB652E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = zstdgrep.1;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		81CCFB0EBD7E47D281D80673 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		87A16A2F5C0D46498B99FDA6 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		8806EF84D9BB408A8CE3BA7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		8C471768F8BB46D29A66D0FD /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = unzstd.1;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		8CBB638B8C56437ABC6C870E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = zstdmt;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		8EAC22669C0D46118A29E73A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/meisel/projects/zstd/build/cmake/xcode/programs/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",ZSTD_MULTITHREAD,"'XXH_NAMESPACE=ZSTD_'","'ZSTD_LEGACY_SUPPORT=5'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/meisel/projects/zstd/build/cmake/xcode/programs,/Users/meisel/projects/zstd/build/cmake/programs,/Users/meisel/projects/zstd/build/cmake/../../programs,/Users/meisel/projects/zstd/build/cmake/../../lib,/Users/meisel/projects/zstd/build/cmake/../../lib/common,/Users/meisel/projects/zstd/build/cmake/../../lib/compress,/Users/meisel/projects/zstd/build/cmake/../../lib/dictBuilder,/Users/meisel/projects/zstd/build/cmake/../../programs/legacy,/Users/meisel/projects/zstd/build/cmake/../../lib/legacy,"$(inherited)");
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (" -Wall -Wextra -Wundef -Wshadow -Wcast-align -Wcast-qual -Wstrict-prototypes -Qunused-arguments -Wa,--noexecstack     -DNDEBUG ","$(inherited)");
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/meisel/projects/zstd/build/cmake/xcode/lib/Release/libzstd.a,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = zstd;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/meisel/projects/zstd/build/cmake/xcode/build/zstd.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		93B76BF0CA9748E4A4333FFF /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = zstdmt;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		94831E69EEE8468DA50B80E6 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = "/Applications/Xcode-14.3.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/meisel/projects/zstd/build/cmake/xcode/build;
+			};
+			name = RelWithDebInfo;
+		};
+		97DF8FEFF4FA4C429DFFAA4F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		A9047BDF534E4DEA97853336 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = unzstd.1;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		A96AB6EBCBEA477180183EB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = zstdless.1;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		ACE48CF5302540BEBF21315D /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/meisel/projects/zstd/build/cmake/xcode/programs/RelWithDebInfo;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",ZSTD_NOBENCH,ZSTD_NODICT,ZSTD_NOTRACE,"'XXH_NAMESPACE=ZSTD_'","'ZSTD_LEGACY_SUPPORT=5'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/meisel/projects/zstd/build/cmake/xcode/programs,/Users/meisel/projects/zstd/build/cmake/programs,/Users/meisel/projects/zstd/build/cmake/../../programs,/Users/meisel/projects/zstd/build/cmake/../../lib,/Users/meisel/projects/zstd/build/cmake/../../lib/common,/Users/meisel/projects/zstd/build/cmake/../../lib/compress,/Users/meisel/projects/zstd/build/cmake/../../lib/dictBuilder,/Users/meisel/projects/zstd/build/cmake/../../programs/legacy,/Users/meisel/projects/zstd/build/cmake/../../lib/legacy,"$(inherited)");
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (" -Wall -Wextra -Wundef -Wshadow -Wcast-align -Wcast-qual -Wstrict-prototypes -Qunused-arguments -Wa,--noexecstack        -DNDEBUG ","$(inherited)");
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/meisel/projects/zstd/build/cmake/xcode/lib/RelWithDebInfo/libzstd.a,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "zstd-frugal";
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/meisel/projects/zstd/build/cmake/xcode/build/zstd-frugal.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		AD24688FDCFF4F7E8C43B57C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/meisel/projects/zstd/build/cmake/xcode/programs/MinSizeRel;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",ZSTD_MULTITHREAD,"'XXH_NAMESPACE=ZSTD_'","'ZSTD_LEGACY_SUPPORT=5'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/meisel/projects/zstd/build/cmake/xcode/programs,/Users/meisel/projects/zstd/build/cmake/programs,/Users/meisel/projects/zstd/build/cmake/../../programs,/Users/meisel/projects/zstd/build/cmake/../../lib,/Users/meisel/projects/zstd/build/cmake/../../lib/common,/Users/meisel/projects/zstd/build/cmake/../../lib/compress,/Users/meisel/projects/zstd/build/cmake/../../lib/dictBuilder,/Users/meisel/projects/zstd/build/cmake/../../programs/legacy,/Users/meisel/projects/zstd/build/cmake/../../lib/legacy,"$(inherited)");
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (" -Wall -Wextra -Wundef -Wshadow -Wcast-align -Wcast-qual -Wstrict-prototypes -Qunused-arguments -Wa,--noexecstack     -DNDEBUG ","$(inherited)");
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/meisel/projects/zstd/build/cmake/xcode/lib/MinSizeRel/libzstd.a,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = zstd;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/meisel/projects/zstd/build/cmake/xcode/build/zstd.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		AD5D1C0D69044518AFED8D0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		AF0C846D577C4561A8FA2335 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = zstdless.1;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		B7A9D893FE96481E81F1F820 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = zstd.1;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		B9FB6C620AD34147B3EECCC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = zstdless.1;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		BC13B2B216BD4198B8AA4EF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		C620DD674A8D43E5A328DC4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = zstdcat.1;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		C84F298C780A4B6DB79919E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/meisel/projects/zstd/build/cmake/xcode/programs/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",ZSTD_MULTITHREAD,"'XXH_NAMESPACE=ZSTD_'","'ZSTD_LEGACY_SUPPORT=5'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/meisel/projects/zstd/build/cmake/xcode/programs,/Users/meisel/projects/zstd/build/cmake/programs,/Users/meisel/projects/zstd/build/cmake/../../programs,/Users/meisel/projects/zstd/build/cmake/../../lib,/Users/meisel/projects/zstd/build/cmake/../../lib/common,/Users/meisel/projects/zstd/build/cmake/../../lib/compress,/Users/meisel/projects/zstd/build/cmake/../../lib/dictBuilder,/Users/meisel/projects/zstd/build/cmake/../../programs/legacy,/Users/meisel/projects/zstd/build/cmake/../../lib/legacy,"$(inherited)");
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (" -Wall -Wextra -Wundef -Wshadow -Wcast-align -Wcast-qual -Wstrict-prototypes -Qunused-arguments -Wa,--noexecstack    ","$(inherited)");
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/meisel/projects/zstd/build/cmake/xcode/lib/Debug/libzstd.a,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = zstd;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/meisel/projects/zstd/build/cmake/xcode/build/zstd.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		D08117C5A15C48C19B2F59A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = zstdcat;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		D1E4D6FC3FC740D1B9E91FC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = unzstd.1;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		D455A68F4DA54440A9FA54EA /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = unzstd;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		DA2F02C284CA4E76BC37BB55 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = zstdcat;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		E67D135E161146CBB268AB2F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/meisel/projects/zstd/build/cmake/xcode/programs/RelWithDebInfo;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",ZSTD_MULTITHREAD,"'XXH_NAMESPACE=ZSTD_'","'ZSTD_LEGACY_SUPPORT=5'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/meisel/projects/zstd/build/cmake/xcode/programs,/Users/meisel/projects/zstd/build/cmake/programs,/Users/meisel/projects/zstd/build/cmake/../../programs,/Users/meisel/projects/zstd/build/cmake/../../lib,/Users/meisel/projects/zstd/build/cmake/../../lib/common,/Users/meisel/projects/zstd/build/cmake/../../lib/compress,/Users/meisel/projects/zstd/build/cmake/../../lib/dictBuilder,/Users/meisel/projects/zstd/build/cmake/../../programs/legacy,/Users/meisel/projects/zstd/build/cmake/../../lib/legacy,"$(inherited)");
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (" -Wall -Wextra -Wundef -Wshadow -Wcast-align -Wcast-qual -Wstrict-prototypes -Qunused-arguments -Wa,--noexecstack        -DNDEBUG ","$(inherited)");
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/meisel/projects/zstd/build/cmake/xcode/lib/RelWithDebInfo/libzstd.a,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = zstd;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/meisel/projects/zstd/build/cmake/xcode/build/zstd.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		E8B09B0A801A404CA69BAFF5 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = zstdcat.1;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		F6EE4387F5734C4F8482CECC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = zstd.1;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		FAB5D71BC6C9464B817AA3F9 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		FCDA772D81AE4465A695E144 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = zstdmt;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		FE5402A17BE8490288117178 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/meisel/projects/zstd/build/cmake/xcode/programs/MinSizeRel;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",ZSTD_NOBENCH,ZSTD_NODICT,ZSTD_NOTRACE,"'XXH_NAMESPACE=ZSTD_'","'ZSTD_LEGACY_SUPPORT=5'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/meisel/projects/zstd/build/cmake/xcode/programs,/Users/meisel/projects/zstd/build/cmake/programs,/Users/meisel/projects/zstd/build/cmake/../../programs,/Users/meisel/projects/zstd/build/cmake/../../lib,/Users/meisel/projects/zstd/build/cmake/../../lib/common,/Users/meisel/projects/zstd/build/cmake/../../lib/compress,/Users/meisel/projects/zstd/build/cmake/../../lib/dictBuilder,/Users/meisel/projects/zstd/build/cmake/../../programs/legacy,/Users/meisel/projects/zstd/build/cmake/../../lib/legacy,"$(inherited)");
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (" -Wall -Wextra -Wundef -Wshadow -Wcast-align -Wcast-qual -Wstrict-prototypes -Qunused-arguments -Wa,--noexecstack     -DNDEBUG ","$(inherited)");
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/meisel/projects/zstd/build/cmake/xcode/lib/MinSizeRel/libzstd.a,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "zstd-frugal";
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/meisel/projects/zstd/build/cmake/xcode/build/zstd-frugal.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		FEB6189EC71A433ABA59FDD4 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = zstdgrep.1;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		452038BEF84C40298AC4A524 /* Build configuration list for PBXAggregateTarget "unzstd.1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9047BDF534E4DEA97853336 /* Debug */,
+				D1E4D6FC3FC740D1B9E91FC5 /* Release */,
+				34A97C434D8D4A41AFE7758F /* MinSizeRel */,
+				8C471768F8BB46D29A66D0FD /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		55DF7B80D68644CC9A9770ED /* Build configuration list for PBXNativeTarget "zstd-frugal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				772E9106D3A14DEFB2F3C91E /* Debug */,
+				270E5A3D9B2F4370A4700DBC /* Release */,
+				FE5402A17BE8490288117178 /* MinSizeRel */,
+				ACE48CF5302540BEBF21315D /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5E3DD6BBB1DB4FA0A702E091 /* Build configuration list for PBXAggregateTarget "zstdcat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6ABEE63BF36746C69CA59D75 /* Debug */,
+				D08117C5A15C48C19B2F59A9 /* Release */,
+				DA2F02C284CA4E76BC37BB55 /* MinSizeRel */,
+				630D135B99964E209CACBCE2 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		74F1EB40D3EC448584B67554 /* Build configuration list for PBXAggregateTarget "zstdmt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C554B3CA9FF40569BC1ACF2 /* Debug */,
+				FCDA772D81AE4465A695E144 /* Release */,
+				8CBB638B8C56437ABC6C870E /* MinSizeRel */,
+				93B76BF0CA9748E4A4333FFF /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8424BB6F55DB447C9086CB5E /* Build configuration list for PBXAggregateTarget "unzstd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0ECAD23D3B754D2EA876B276 /* Debug */,
+				55F9FA0F95F34EB4AECA6EEC /* Release */,
+				576A7914219F469BB77C9206 /* MinSizeRel */,
+				D455A68F4DA54440A9FA54EA /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		873B038CA9EF4A4BB25A12D2 /* Build configuration list for PBXAggregateTarget "zstdcat.1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0215E4B563E44E648E3AB26B /* Debug */,
+				C620DD674A8D43E5A328DC4F /* Release */,
+				E8B09B0A801A404CA69BAFF5 /* MinSizeRel */,
+				1E23706647A04C8D9AD267F3 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8E50C8E96BD941D8A3267C93 /* Build configuration list for PBXAggregateTarget "zstd.1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6EE4387F5734C4F8482CECC /* Debug */,
+				B7A9D893FE96481E81F1F820 /* Release */,
+				67D26F0FFB35473193F495A6 /* MinSizeRel */,
+				43703E9C22A441618C106E81 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9BC6B6E24ACD45FBB3D7EAE4 /* Build configuration list for PBXNativeTarget "zstd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C84F298C780A4B6DB79919E9 /* Debug */,
+				8EAC22669C0D46118A29E73A /* Release */,
+				AD24688FDCFF4F7E8C43B57C /* MinSizeRel */,
+				E67D135E161146CBB268AB2F /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A302055CA27C4D9B8DDA507B /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81CCFB0EBD7E47D281D80673 /* Debug */,
+				AD5D1C0D69044518AFED8D0A /* Release */,
+				266036515B754CDDA5C09E6B /* MinSizeRel */,
+				300AE72E412043A6B0648A26 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AC54E49002C644B196F23A2C /* Build configuration list for PBXAggregateTarget "zstdless.1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A96AB6EBCBEA477180183EB7 /* Debug */,
+				B9FB6C620AD34147B3EECCC9 /* Release */,
+				5B3C82635573409EAE2A20AF /* MinSizeRel */,
+				AF0C846D577C4561A8FA2335 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D65371EDFDD941A48CE6AC8B /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13855164649F43B6BBB35DAA /* Debug */,
+				BC13B2B216BD4198B8AA4EF7 /* Release */,
+				2B7956371CB44CF9BF3AB045 /* MinSizeRel */,
+				97DF8FEFF4FA4C429DFFAA4F /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E0D027C66FC64C509600AB36 /* Build configuration list for PBXAggregateTarget "zstdgrep.1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6094CDE0362E4B1284066412 /* Debug */,
+				2D073AAC648B41C7AE8F3588 /* Release */,
+				77E336EE4DDA4526A2FB652E /* MinSizeRel */,
+				FEB6189EC71A433ABA59FDD4 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F37B616FA7994633A10309C2 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EFF219729F0486FBC41038D /* Debug */,
+				8806EF84D9BB408A8CE3BA7A /* Release */,
+				FAB5D71BC6C9464B817AA3F9 /* MinSizeRel */,
+				87A16A2F5C0D46498B99FDA6 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FBBC38B6332043069172CBE6 /* Build configuration list for PBXProject "programs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B8DBDEE6C434228A4BB3842 /* Debug */,
+				5D3180EF31524D12BF4BB658 /* Release */,
+				4A18517510284A4DA06B9388 /* MinSizeRel */,
+				94831E69EEE8468DA50B80E6 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A9CF54824B6481CA6E20BAB /* Project object */;
+}

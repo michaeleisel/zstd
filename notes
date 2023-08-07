@@ -1,6 +1,7 @@
 there's an outlier .S file for amd 64 which i removed for iOS builds
-zstd-decompress comes from ZSTD_COMMON_FILES + ZSTD_DECOMPRESS_FILES. each of these is simply all the *.c files in each of their respective directories
-running zstd-decompress on upstream dev, with V=1 to show commands, will show that it applies a simple and consistent of flags to all files being compiled
+zstd-decompress comes from ZSTD_COMMON_FILES + ZSTD_DECOMPRESS_FILES. each of these is simply all the *.c files in common/ and decompress/
+running `make zstd-decompress` on upstream dev, with V=1 to show commands, will show that it applies a simple and consistent of flags to all files being compiled
+
 ways to reduce size:
   -Os
   turn off legacy support with flags
@@ -10,3 +11,4 @@ to cross-compile, simply add "-Os -target arm64-apple-ios14.0 -isysroot `xcode-s
 to build for ios with decompression only, use:
   cd programs && make clean ; V=1 CFLAGS="-c -Os -target arm64-apple-ios14.0 -isysroot `xcode-select -p`/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk" LDFLAGS="$CFLAGS" make zstd-decompress
 
+to build for simulator, just replace all occurrences of "iPhoneOS" with "iPhoneSimulator"
