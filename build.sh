@@ -7,14 +7,14 @@ rm programs/*.a || true # `make clean` doesn't seem to catch this one, so delete
 # Real phone
 make clean
 rm lib/decompress/*.o lib/common/*.o || true
-CUSTOM_FLAGS="-c -Os -target arm64-apple-ios14.0 -isysroot `xcode-select -p`/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk"
+CUSTOM_FLAGS="-fvisibility=hidden -DZSTDLIB_VISIBLE='__attribute__((visibility(\"hidden\")))' -c -Os -target arm64-apple-ios14.0 -isysroot `xcode-select -p`/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk"
 V=1 CFLAGS="$CUSTOM_FLAGS" LDFLAGS="$CUSTOM_FLAGS" make -C programs zstd-decompress
 mv programs/libzstd-decompress.a libzstd-decompress-iphone.a
 
 # Simulator
 make clean
 rm lib/decompress/*.o lib/common/*.o || true
-CUSTOM_FLAGS="-c -Os -target arm64-apple-ios14.0-simulator -isysroot `xcode-select -p`/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk"
+CUSTOM_FLAGS="-fvisibility=hidden -DZSTDLIB_VISIBLE='__attribute__((visibility(\"hidden\")))' -c -Os -target arm64-apple-ios14.0-simulator -isysroot `xcode-select -p`/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk"
 V=1 CFLAGS="$CUSTOM_FLAGS" LDFLAGS="$CUSTOM_FLAGS" make -C programs zstd-decompress
 mv programs/libzstd-decompress.a libzstd-decompress-simulator.a
 
